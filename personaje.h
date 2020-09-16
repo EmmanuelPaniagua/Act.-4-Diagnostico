@@ -42,7 +42,7 @@ void mostrar_personajes()
         printf("Nombre: %s\n", personajes[i].nombre);
         printf("Tipo: %s\n", personajes[i].tipo);
         printf("Fuerza: %f\n", personajes[i].fuerza);
-        printf("Salud: %f\n", personajes[i].salud);
+        printf("Salud: %i\n", personajes[i].salud);
     }
 }
 
