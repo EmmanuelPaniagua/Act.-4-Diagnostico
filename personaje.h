@@ -13,7 +13,7 @@ struct personaje
 
 unsigned int cont = 0;
 
-void capturar_persona()
+void capturar_personajes()
 {
     if (cont < 5)
     {
@@ -30,10 +30,20 @@ void capturar_persona()
     }
     else
     {
-        print("Arreglo de personajes lleno\n");
+        printf("Arreglo de personajes lleno\n");
     }
 }
 
-
+void mostrar_personajes()
+{
+    int i;
+    for(i = 0 ; i < cont ; i++)
+    {
+        printf("Nombre: %s\n", personajes[i].nombre);
+        printf("Tipo: %s\n", personajes[i].tipo);
+        printf("Fuerza: %f\n", personajes[i].fuerza);
+        printf("Salud: %f\n", personajes[i].salud);
+    }
+}
 
 #endif
