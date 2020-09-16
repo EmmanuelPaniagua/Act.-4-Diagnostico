@@ -24,9 +24,21 @@ void capturar_enteros()
 	printf("Promedio: %f\n", suma/5.0);
 }
 
+void mostar(int n, char cadena[])
+{
+	int i;
+	for( i = 0 ; i < n ; i++)
+	{
+		printf("%s\n", cadena);
+	}
+}
+
+
 int main()
 {
 	char op;
+	char cadena[20];
+	int n;
 	do
 	{
 		system("cls");
@@ -44,6 +56,13 @@ int main()
 				system ("pause");
 				break;
 			case '2':
+				printf("\nEscribe una cadena de hasta 20 caracteres:\n");
+				fflush(stdin);
+				gets(cadena);
+				printf("n: ");
+				scanf("%i", &n);
+				mostar(n, cadena);
+				system ("pause");
 				break;
 			case '3':
 				break;
