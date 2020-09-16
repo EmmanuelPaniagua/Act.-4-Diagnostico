@@ -43,6 +43,7 @@ void mostrar_personajes()
         printf("Tipo: %s\n", personajes[i].tipo);
         printf("Fuerza: %f\n", personajes[i].fuerza);
         printf("Salud: %i\n", personajes[i].salud);
+        printf("\n");
     }
 }
 
