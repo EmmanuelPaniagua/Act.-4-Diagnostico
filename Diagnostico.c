@@ -13,6 +13,7 @@ void capturar_enteros()
 	{
 		scanf("%i", &enteros[i]);
 	}
+	printf("\n");
 	for ( i = 0; i < 5 ; i++)
 	{
 		printf("%i\n", enteros[i]);
